@@ -1,8 +1,20 @@
+import {
+  GlitchHeader,
+  GlitchContainer,
+  HomeContainer,
+  HeroContainer,
+} from "./Home.styles";
+
 export const Home = () => {
   return (
-    <div>
-      <h1>Kevin Chang</h1>
-      <h2>Cybersecurity Analyst</h2>
-    </div>
+    <HomeContainer>
+      <HeroContainer>
+        <GlitchContainer>
+          <GlitchHeader>Kevin Chang</GlitchHeader>
+          <GlitchHeader>Kevin Chang</GlitchHeader>
+        </GlitchContainer>
+        <h2>Cybersecurity Analyst</h2>
+      </HeroContainer>
+    </HomeContainer>
   );
 };
