@@ -13,14 +13,17 @@ export const HeroContainer = styled.div`
   h2 {
     color: white;
     text-transform: uppercase;
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 3rem;
+    font-family: "Libre Barcode 128 Text", cursive;
+    font-size: 6.2rem;
     font-weight: 300;
+    margin: 0;
   }
 `;
 
 export const GlitchHeader = styled.h1`
   font-family: "Rubik Maze";
+  font-size: 6rem;
+  text-transform: uppercase;
   color: white;
   margin: 0;
 
@@ -74,14 +77,7 @@ export const GlitchHeader = styled.h1`
 
 export const GlitchContainer = styled.div`
   position: relative;
-  h1 {
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
-  h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-  }
+  user-select: none;
   ${GlitchHeader}:first-child {
     animation: glitch 650ms infinite;
     clip-path: polygon(0 0, 100% 0, 100% 36%, 0 45%);
